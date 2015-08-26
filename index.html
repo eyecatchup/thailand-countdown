@@ -7,22 +7,15 @@
     <meta name="viewport" content="height=device-height, initial-scale=1.0">
     <style>
         html,body{height:100%;}
-        body {background:url(bangkok.jpg) no-repeat center center fixed;background-size:cover;background-color:#000;text-align:center;line-height:2.2em;margin-top:12.5%;font-family:Arial;}
-        h1,h2{color:#fff;background:rgba(0,0,0,.0);text-shadow:3px 3px 2px #000;}
-        h1{font-size:1.7em;}
-        h2{font-size:1.4em;}
-        #countdown{font-size:120%;}
+        body{background:url(bangkok.jpg) no-repeat center center fixed;background-size:cover;background-color:#000;overflow:hidden;text-align:center;line-height:2.2em;padding-top:12.5%;font-family:Arial;}
+        h1,h2{color:#fff;text-shadow:3px 3px 2px #000;}h1{font-size:1.7em;}h2{font-size:1.4em;}#countdown{font-size:120%;}
     </style>
 </head>
 <body>
     <script>
-        var takeoff = new Date("10/19/2015 9:25 PM"),
-            t;
-        t = setInterval(function(){
-            var a=takeoff-new Date;
-            if(0>a)clearInterval(c),document.getElementById("countdown").innerHTML="READY FOR TAKEOFF!";
-            else{var d=Math.floor(a%864E5/36E5),e=Math.floor(a%36E5/6E4),f=Math.floor(a%6E4/1E3);document.getElementById("countdown").innerHTML="<nobr>"+Math.floor(a/864E5)+" Tag(e),</nobr> ";document.getElementById("countdown").innerHTML+="<nobr>"+d+" Stunde(n),</nobr> ";document.getElementById("countdown").innerHTML+="<nobr>"+e+" Minute(n)</nobr> und ";document.getElementById("countdown").innerHTML+="<nobr>"+f+" Sekunde(n)</nobr>"}
-        }, 1E3);
+        var takeoff = new Date("10/19/2015 9:25 PM");
+        setInterval(function(){var a=takeoff-new Date;if(0>a)clearInterval(c),document.getElementById("countdown").innerHTML="READY FOR TAKEOFF!";else{var b=Math.floor(a%864E5/36E5),d=Math.floor(a%36E5/6E4),f=Math.floor(a%6E4/1E3);0!=Math.floor(a/864E5)&&(document.getElementById("countdown").innerHTML="<nobr>"+Math.floor(a/864E5)+" Tag(e),</nobr> ");0!=b&&(document.getElementById("countdown").innerHTML+="<nobr>"+b+" Stunde(n),</nobr> ");0!=d&&(document.getElementById("countdown").innerHTML+="<nobr>"+d+" Minute(n)</nobr> und ");
+        document.getElementById("countdown").innerHTML+="<nobr>"+f+" Sekunde(n)</nobr>"}},1E3);
     </script>
     <hgroup>
         <h1>Verbleibende Zeit bis zum &#9992; nach Thailand 🌴 &#9728;</h1>
