@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Remaining time till &#9992; to Thailand 🌴 &#9728;</title>
+    <meta name="description" value="A countdown timer to flight DUS 1998, starting Oct 19th, 9:25 PM from International Airport Dusseldorf, Germany to Abu Dhabi, VEA.">
+    <style>
+        body{text-align:center;position:initial;line-height:2.2em;margin-top:10%;}
+        #countdown{font-size:120%;}
+    </style>
+</head>
+<body>
+    <script>
+        var takeoff = new Date("10/19/2015 9:25 PM"),
+            t;
+        t = setInterval(function(){
+            var a=takeoff-new Date;
+            if(0>a)clearInterval(c),document.getElementById("countdown").innerHTML="READY FOR TAKEOFF!";
+            else{var d=Math.floor(a%864E5/36E5),e=Math.floor(a%36E5/6E4),f=Math.floor(a%6E4/1E3);document.getElementById("countdown").innerHTML=Math.floor(a/864E5)+" Tage, ";document.getElementById("countdown").innerHTML+=d+" Stunden, ";document.getElementById("countdown").innerHTML+=e+" Minuten und ";document.getElementById("countdown").innerHTML+=f+" Sekunden"}
+        }, 1E3);
+    </script>
+    <hgroup>
+        <h1>Verbleibende Zeit bis zum &#9992; nach Thailand 🌴 &#9728;</h1>
+        <h2>Noch<br><span id="countdown"></span><br>bis zum Abflug von Flug DUS 1998,<br>am 19. Oktober 2015, 21:25 Uhr,<br>von Düsseldorf nach Abu Dhabi.</h2>
+    </hgroup>
+</body>
+</html>
